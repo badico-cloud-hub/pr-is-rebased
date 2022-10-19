@@ -1,5 +1,5 @@
-name: 'Verify if Rebased'
-description: 'Action for verify if rebased PR, and set label (is-rebased or not-rebased)'
+name: 'PR is Rebased'
+description: 'Action that verifis if a Pull Request is rebased, indicating with labels: is-rebased or not-rebased'
 branding:
   icon: 'arrow-up-circle'
   color: 'green'
