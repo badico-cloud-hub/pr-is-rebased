@@ -1,4 +1,4 @@
-name: 'Verify if is Rebased'
+name: 'Verify if Rebased'
 description: 'Action for verify if rebased PR, and set label (is-rebased or not-rebased)'
 branding:
   icon: 'arrow-up-circle'
