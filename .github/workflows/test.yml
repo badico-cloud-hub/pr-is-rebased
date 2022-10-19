@@ -1,0 +1,28 @@
+name: test-of-action
+
+on:
+  push:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: verify if rebased
+        id: verify
+        uses: ./
+        with:
+          gh-token: ${{ env.GH_TOKEN }}
+      - name: pr number
+        run: echo ${{ steps.verify.outputs.pr-number}}
+      - name: is rebased
+        run: echo ${{ steps.verify.outputs.rebased}}
