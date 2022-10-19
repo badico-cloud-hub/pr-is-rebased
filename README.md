@@ -1,9 +1,9 @@
-# Verify If Rebased
+# PR is Rebased
 Action for verify if PR is rebased, and set labels to pr - (is-rebased/not-rebased)
 
 ## Usage
 ```
-- uses: badico-cloud-hub/verify-if-rebased@v1
+- uses: badico-cloud-hub/pr-is-rebased@v1
   with:
     # Default branch of repository
     # param default - (github.event.repository.default_branch)
