@@ -1,5 +1,5 @@
 {
-    "name": "verify-if-rebased",
+    "name": "pr-is-rebased",
     "version": "1.0.0",
     "description": "Action for verify if PR is rebased, and set labels to pr - (is-rebased/not-rebased)",
     "main": "index.js",
